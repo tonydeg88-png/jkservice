@@ -1,0 +1,6 @@
+{
+  "name": "J&K Services",
+  "description": "Votre partenaire en gestion d'entreprise, immobilier, fiscalité, et services administratifs professionnels à Lomé, Togo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
