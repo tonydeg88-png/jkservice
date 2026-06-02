@@ -4,6 +4,7 @@
  */
 
 import { Mail, Phone, MapPin, ShieldCheck, ArrowUp } from 'lucide-react';
+import Logo from './Logo';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -35,18 +36,8 @@ export default function Footer() {
           
           {/* Logo Brand column */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="flex items-center group cursor-pointer" onClick={scrollToTop}>
-              <div className="h-10 w-10 rounded-lg bg-blue-900 flex items-center justify-center font-bold text-white text-xl shadow-md">
-                J<span className="text-emerald-400">&</span>K
-              </div>
-              <div className="ml-3">
-                <span className="text-xl font-extrabold text-white tracking-tight block">
-                  J&K SERVICES
-                </span>
-                <span className="text-[9px] font-semibold text-emerald-400 tracking-wider block -mt-1 uppercase">
-                  Gestion & Administration d’élite
-                </span>
-              </div>
+            <div onClick={scrollToTop} className="cursor-pointer">
+              <Logo variant="footer" />
             </div>
 
             <p className="text-slate-400 text-sm font-light leading-relaxed max-w-sm">

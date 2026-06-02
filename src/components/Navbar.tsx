@@ -5,6 +5,7 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X, Calculator, PhoneCall } from 'lucide-react';
+import Logo from './Logo';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -50,19 +51,9 @@ export default function Navbar() {
           {/* Logo */}
           <div
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center cursor-pointer group"
+            className="flex items-center cursor-pointer"
           >
-            <div className="h-10 w-10 rounded-lg bg-blue-900 flex items-center justify-center font-bold text-white text-xl shadow-md group-hover:bg-blue-800 transition-colors">
-              J<span className="text-emerald-400">&</span>K
-            </div>
-            <div className="ml-3">
-              <span className="text-xl font-extrabold text-blue-900 tracking-tight block">
-                J&K SERVICES
-              </span>
-              <span className="text-[9px] font-semibold text-emerald-600 tracking-wider block -mt-1 uppercase">
-                Gestion & Administration d’élite
-              </span>
-            </div>
+            <Logo variant="navbar" theme={isScrolled ? 'light' : 'dark'} />
           </div>
 
           {/* Desktop Navigation */}

@@ -6,6 +6,7 @@
 import { STATS_DATA } from '../data';
 import { motion } from 'motion/react';
 import { Check, Heart, Trophy, Compass, Star } from 'lucide-react';
+import directorPhoto from '../assets/images/about_director_1780411868108.png';
 
 export default function About() {
   return (
@@ -26,9 +27,9 @@ export default function About() {
               {/* Main Image Frame */}
               <div className="relative rounded-2xl overflow-hidden border-8 border-slate-50 shadow-2xl aspect-[3/4]">
                 <img
-                  src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?auto=format&fit=crop&q=80&w=600"
+                  src={directorPhoto}
                   alt="Fondateur / Directeur J&K Services à son bureau"
-                  className="w-full h-full object-cover grayscale-10 brightness-110 filter hover:scale-105 transition-all duration-700"
+                  className="w-full h-full object-cover brightness-105 filter hover:scale-105 transition-all duration-700"
                   referrerPolicy="no-referrer"
                 />
                 
